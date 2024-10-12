@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Equity Platform</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f5deb3; /* Cream-colored background similar to blonde human skin */
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Header -->
+    <header class="bg-navy-blue text-white py-4 px-8 flex justify-between items-center shadow-lg fixed w-full z-10" style="background-color: #001f3f;">
+        <h1 class="text-2xl font-bold">"SwasthyaSetu" (स्वास्थ्यसेतु)</h1>
+        <nav class="space-x-6">
+            <a href="#" class="hover:underline">About Us</a>
+            <a href="#" class="hover:underline">Features</a>
+            <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">Login</button>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Chat with Us</button>
+        </nav>
+    </header>
+
+    <!-- Flexbox Container -->
+    <main class="pt-24 pb-12 flex justify-center items-center min-h-screen">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 w-11/12 lg:w-8/12">
+            
+            <!-- Feature 1: Real-Time SDOH Analysis -->
+            <div class="bg-navy-blue text-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 h-64" style="background-color: #001f3f;">
+                <h3 class="text-xl font-bold mb-4"> SDOH Analysis</h3>
+                <p class="mb-4">Collect and process real-time data </p>
+                <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded" onclick="goToPage('feature1.html')">Proceed</button>
+            </div>
+
+            <!-- Feature 2: Predictive Healthcare Modeling -->
+            <div class="bg-navy-blue text-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 h-64" style="background-color: #001f3f;">
+                <h3 class="text-xl font-bold mb-4">Predictict </h3>
+                <p class="mb-4"> Foresee health outcomes based on Social Determinants of Health (SDOH)</p>
+                <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded" onclick="goToPage('feature2.html')">Proceed</button>
+            </div>
+
+            <!-- Feature 3: Targeted Resource Allocation -->
+            <div class="bg-navy-blue text-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 h-64" style="background-color: #001f3f;">
+                <h3 class="text-xl font-bold mb-4">GeoTracker</h3>
+                <p class="mb-4">Identify underserved areas in need of healthcare and food resources. </p>
+                <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded" onclick="goToPage('feature3.html')">Proceed</button>
+            </div>
+
+            <!-- Feature 4: Interactive Dashboards -->
+            <div class="bg-navy-blue text-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 h-64 mb-8" style="background-color: #001f3f;">
+                <h3 class="text-xl font-bold mb-4"> Dashboards</h3>
+                <p class="mb-4">Explore real-time health metrics and predictive models with interactive dashboards. </p>
+                <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded" onclick="goToPage('feature4.html')">Proceed</button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-blue text-white py-4 text-center shadow-lg" style="background-color: #001f3f;">
+        <p>&copy; 2024 "SwasthyaSetu" (स्वास्थ्यसेतु). All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for navigation -->
+    <script>
+        function goToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>
